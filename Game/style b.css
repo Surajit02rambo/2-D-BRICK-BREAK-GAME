@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #a6e7a4;
+    background: url(https://frebers.com/wp-content/uploads/2016/07/game-background-p4-4.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    cursor: none;
+    animation: move 40s infinite ease-in-out;
+  }
+  
+  h1 {
+    font-size: 45px;
+    color: #fff;
+  }
+  
+  canvas {
+    background: url(https://cdn.gamedevmarket.net/wp-content/uploads/20191203193706/e65ab41ae1ce7b3a4a623c4fb1922376f3271e69.jpg);
+    display: block;
+    border-radius: 5px;
+    cursor: none;
+    animation: move 40s infinite ease-in-out;
+  }
+  
+  .btn {
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    background: rgb(119, 129, 219);
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .btn:focus {
+    outline: 0;
+  }
+  
+  .btn:hover {
+    background: #222;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .rules-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  
+  .rules {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(119, 17, 80);
+    color: rgb(230, 215, 225);
+    min-height: 100vh;
+    width: 400px;
+    padding: 20px;
+    line-height: 1.5;
+    transform: translateX(-400px);
+    transition: transform 1s ease-in-out;
+  }
+  
+  .rules.show {
+    transform: translateX(0);
+  }
+
+  @-webkit-keyframes move {
+    0%{
+      background:url(http://getwallpapers.com/wallpaper/full/5/9/a/1444119-4k-games-wallpaper-3840x2160-for-pc.jpg);
+    }
+   20%{
+     background: url(http://getwallpapers.com/wallpaper/full/4/d/d/271136.jpg);
+   }
+     40%{
+      background: url(https://www.onmsft.com/wp-content/uploads/2020/05/ss_ad282098980861202266d0af6ea8a614617de1e2.600x338.jpg);
+     }
+   
+    100%{
+      background: url(http://3.bp.blogspot.com/-ntgY5VZzkp4/T8-aTXG_kzI/AAAAAAAAAHI/kuzWUHH0KDI/s1600/Level+one.jpg);
+    }
+  
+  }
+ 
+  a {
+    color: aliceblue;
+    height: 60px;
+    width: 50px;
+    text-align: right;
+    
+  }
+      
